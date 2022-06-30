@@ -1,0 +1,294 @@
+body {
+  overflow-x: hidden;
+  /* -------------------------------------------------------------------------- */
+  /*                                   HEADER                                   */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                             CONTENIDO PRINCIPAL                            */
+  /* -------------------------------------------------------------------------- */
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  letter-spacing: 0.08rem;
+}
+
+body p,
+body li,
+body a,
+body span {
+  letter-spacing: 0.04rem;
+  line-height: 1.3;
+}
+
+body .header {
+  padding: 1rem 0;
+}
+
+body .header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .header__logo img {
+  height: 75px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header__menu ul {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header__menu ul li {
+  list-style: none;
+  padding-right: 25px;
+}
+
+body .header__menu ul li:last-child {
+  padding-right: 0;
+}
+
+body .header__menu ul li a {
+  padding: 3.5rem 0;
+  color: #707070;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .header__menu ul li a:hover {
+  opacity: 0.5;
+}
+
+body .header__menu ul li a.current {
+  font-weight: bold;
+}
+
+body .main__bannerprincipal {
+  background-image: url("../img/Room-Final-4K.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: calc(110vh - 107px);
+  position: relative;
+}
+
+body .main__bannerprincipal-contenido {
+  width: 35%;
+  background-color: #333d27;
+  position: relative;
+  z-index: 3;
+}
+
+body .main__bannerprincipal-contenido_info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main__bannerprincipal-contenido_info ul {
+  margin-bottom: 0;
+}
+
+body .main__bannerprincipal-contenido_info ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  color: #fff;
+  padding-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main__bannerprincipal-contenido_info ul li img {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+body .main__bannerprincipal-contenido_imagen {
+  position: absolute;
+  top: 100px;
+  left: -230px;
+  z-index: 2;
+  -webkit-box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+body .main__bannerprincipal-contenido_imagen img {
+  height: 60vh;
+  width: 22vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+body .main__bannerprincipal-contenido_planobottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+body .main__bannerprincipal-contenido_planobottom img {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  height: 20vh;
+}
+
+body .main__bannerprincipal-contenido_arrowdown {
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  bottom: 20px;
+}
+
+body .main__bannerprincipal-contenido_arrowdown img {
+  height: auto;
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .main__bannerprincipal-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+body .main__portafoliogrid {
+  padding: 0.85rem 0;
+}
+
+body .main__portafoliogrid-caja {
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body .main__portafoliogrid-caja:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .main__portafoliogrid-caja:hover .main__portafoliogrid-caja__contenidofooter {
+  bottom: 0px;
+}
+
+body .main__portafoliogrid-caja:nth-child(2) {
+  margin: 0 0.95rem;
+}
+
+body .main__portafoliogrid-caja img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__portafoliogrid-caja__contenidofooter {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3.5rem;
+  z-index: 3;
+}
+
+body .main__portafoliogrid-caja__contenidofooter-titulo {
+  z-index: 3;
+}
+
+body .main__portafoliogrid-caja__contenidofooter-titulo p {
+  color: #fff;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+body .main__portafoliogrid-caja__contenidofooter-leermas {
+  z-index: 3;
+}
+
+body .main__portafoliogrid-caja__contenidofooter-leermas a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+body .main__portafoliogrid-caja__contenidofooter-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+}
+/*# sourceMappingURL=estilos.css.map */
