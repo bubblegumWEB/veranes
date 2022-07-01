@@ -228,5 +228,107 @@ body {
         }
       }
     }
+
+    // PORTAFOLIO INFO
+
+    &__portafoliohome {
+      height: 750px;
+      .container-fluid {
+        height: 100%;
+        .row {
+          height: 100%;
+        }
+      }
+      &-info {
+        background-color: $primary;
+        height: 100%;
+        margin-right: 0.95rem;
+        width: 32.8%;
+        padding: 2rem 2rem 2rem 3rem;
+        position: relative;
+        &__border {
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 3rem;
+          position: relative;
+          &-titulo {
+            h1 {
+              color: #fff;
+              font-weight: 300;
+              padding-bottom: 1.5rem;
+              font-size: 2rem;
+            }
+            hr {
+              border-bottom: 2px solid #fff;
+              width: 90%;
+              opacity: 1;
+            }
+          }
+          &-texto {
+            padding-top: 1rem;
+            padding-right: 3rem;
+            p {
+              color: #fff;
+              font-size: 1rem;
+              font-weight: 300;
+            }
+          }
+          &-leermas {
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            z-index: 3;
+            i {
+              font-size: 1.25rem;
+              padding-left: 0.25rem;
+              transition: 0.5s;
+            }
+            a {
+              color: #fff;
+              text-transform: uppercase;
+              text-decoration: none;
+              transition: 0.5s;
+              &:hover {
+                opacity: 0.85;
+                i {
+                  transform: scale(1.35) translateX(0.2rem);
+                }
+              }
+            }
+          }
+        }
+        &__planobg {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          img {
+            width: 80%;
+          }
+        }
+      }
+      &-image {
+        background-image: url("../img/Render-de-Fachada-Final.jpg");
+        background-size: cover;
+        position: relative;
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+        &__arrowdown {
+          position: absolute;
+          right: 100px;
+          bottom: 50px;
+          z-index: 3;
+        }
+      }
+    }
   }
 }

@@ -291,4 +291,130 @@ body .main__portafoliogrid-caja__contenidofooter-overlay {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
 }
+
+body .main__portafoliohome {
+  height: 750px;
+}
+
+body .main__portafoliohome .container-fluid {
+  height: 100%;
+}
+
+body .main__portafoliohome .container-fluid .row {
+  height: 100%;
+}
+
+body .main__portafoliohome-info {
+  background-color: #5c6e47;
+  height: 100%;
+  margin-right: 0.95rem;
+  width: 32.8%;
+  padding: 2rem 2rem 2rem 3rem;
+  position: relative;
+}
+
+body .main__portafoliohome-info__border {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 3rem;
+  position: relative;
+}
+
+body .main__portafoliohome-info__border-titulo h1 {
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+body .main__portafoliohome-info__border-titulo hr {
+  border-bottom: 2px solid #fff;
+  width: 90%;
+  opacity: 1;
+}
+
+body .main__portafoliohome-info__border-texto {
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+body .main__portafoliohome-info__border-texto p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+body .main__portafoliohome-info__border-leermas {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 3;
+}
+
+body .main__portafoliohome-info__border-leermas i {
+  font-size: 1.25rem;
+  padding-left: 0.25rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__portafoliohome-info__border-leermas a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__portafoliohome-info__border-leermas a:hover {
+  opacity: 0.85;
+}
+
+body .main__portafoliohome-info__border-leermas a:hover i {
+  -webkit-transform: scale(1.35) translateX(0.2rem);
+          transform: scale(1.35) translateX(0.2rem);
+}
+
+body .main__portafoliohome-info__planobg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+body .main__portafoliohome-info__planobg img {
+  width: 80%;
+}
+
+body .main__portafoliohome-image {
+  background-image: url("../img/Render-de-Fachada-Final.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+body .main__portafoliohome-image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body .main__portafoliohome-image__arrowdown {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  z-index: 3;
+}
 /*# sourceMappingURL=estilos.css.map */
