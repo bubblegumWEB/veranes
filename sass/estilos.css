@@ -1,10 +1,14 @@
 body {
   overflow-x: hidden;
+  font-family: "Lato", sans-serif;
   /* -------------------------------------------------------------------------- */
   /*                                   HEADER                                   */
   /* -------------------------------------------------------------------------- */
   /* -------------------------------------------------------------------------- */
   /*                             CONTENIDO PRINCIPAL                            */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                                   FOOTER                                   */
   /* -------------------------------------------------------------------------- */
 }
 
@@ -334,7 +338,7 @@ body .main__portafoliohome-info__border-titulo h1 {
   color: #fff;
   font-weight: 300;
   padding-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 body .main__portafoliohome-info__border-titulo hr {
@@ -416,5 +420,231 @@ body .main__portafoliohome-image__arrowdown {
   right: 100px;
   bottom: 50px;
   z-index: 3;
+}
+
+body .main__exclusivaubicacion {
+  padding-top: 7rem;
+  position: relative;
+}
+
+body .main__exclusivaubicacion .container {
+  max-width: 65vw;
+  margin: auto;
+  position: relative;
+}
+
+body .main__exclusivaubicacion-contenido {
+  text-align: center;
+  padding-bottom: 6.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+body .main__exclusivaubicacion-contenido h1 {
+  font-size: 2.5rem;
+  color: #5c6e47;
+  text-transform: uppercase;
+}
+
+body .main__exclusivaubicacion-contenido p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #5c6e47;
+}
+
+body .main__exclusivaubicacion-dispositivos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main__exclusivaubicacion-dispositivos__pantalla {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+body .main__exclusivaubicacion-dispositivos__pantalla img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 3;
+}
+
+body .main__exclusivaubicacion-dispositivos__mobiles {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 3;
+}
+
+body .main__exclusivaubicacion-dispositivos__mobiles-tablet {
+  z-index: 1;
+}
+
+body .main__exclusivaubicacion-dispositivos__mobiles-tablet img {
+  height: 300px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+body .main__exclusivaubicacion-dispositivos__mobiles-celulares {
+  z-index: 1;
+}
+
+body .main__exclusivaubicacion-dispositivos__mobiles-celulares img {
+  height: 230px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .main__exclusivaubicacion-dispositivos__laptop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+body .main__exclusivaubicacion-dispositivos__laptop img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .main__exclusivaubicacion-barrabaja {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  background: #5c6e4710;
+  height: 50px;
+  width: 100%;
+  z-index: 0;
+}
+
+body .main__conceptoydiseno {
+  background: #5c6e4710;
+  height: 75vh;
+}
+
+body .main__conceptoydiseno .container {
+  height: 100%;
+  max-width: 65vw;
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main__conceptoydiseno .container .row .col-md {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main__conceptoydiseno-info, body .main__conceptoydiseno-image {
+  color: #5c6e47;
+}
+
+body .main__conceptoydiseno-info h3 {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+body .main__conceptoydiseno-info p {
+  font-size: 1.1rem;
+  font-family: 100;
+}
+
+body .main__conceptoydiseno-image img {
+  height: 300px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .footer {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../img/Render-de-Fachada-Final.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+body .footer__logo {
+  text-align: center;
+  z-index: 3;
+}
+
+body .footer__logo img {
+  width: auto;
+  height: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .footer__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: radial-gradient(#5c6e47 10%, #5c6e47 10%, #333d27 80%, #333d27 100%);
+  background-blend-mode: overlay;
+  opacity: 0.95;
+}
+
+@media screen and (max-width: 2400px) and (min-width: 1850px) {
+  body .main__exclusivaubicacion .container {
+    max-width: 60vw;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
