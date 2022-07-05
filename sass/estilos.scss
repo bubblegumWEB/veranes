@@ -7,6 +7,84 @@ body {
   $color-medium-black: #707070;
   $color-dark: #251f20;
 
+  // ESTILOS SCROLL PARALLAX
+
+  .project {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1.25s;
+  }
+  .project-down {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1.25s;
+  }
+  .project-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.25s;
+  }
+  .project-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1.25s;
+  }
+  .project-zoom {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.65s;
+  }
+  .project-zoom_dos {
+    opacity: 0;
+    transform: scale(0);
+    transition: 1.5s;
+  }
+  .project-zoom_tres {
+    opacity: 0;
+    transform: scale(0);
+    transition: 2s;
+  }
+  .project-zoom_cuatro {
+    opacity: 0;
+    transform: scale(0);
+    transition: 2.5s;
+  }
+  .project-zoom_cinco {
+    opacity: 0;
+    transform: scale(0);
+    transition: 2.8s;
+  }
+  .project-zoom_seis {
+    opacity: 0;
+    transform: scale(0);
+    transition: 3.1s;
+  }
+  .fade-left {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fade-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .zoom-in {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .fade-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  // FIN ESTILOS SCROLL PARALLAX
+
   h1,
   h2,
   h3,
@@ -30,6 +108,13 @@ body {
 
   .header {
     padding: 1rem 0;
+    &.activo {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
     .container {
       display: flex;
       justify-content: space-between;
