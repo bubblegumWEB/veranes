@@ -10,6 +10,24 @@ jQuery(".project").each(function () {
     .addTo(controller);
 });
 
+jQuery(".bcg-parallax").each(function () {
+  var parallaxTl = new TimelineMax();
+  parallaxTl.from(
+    this.children[0],
+    0.5,
+    { y: "-50%", ease: Power0.easeNone },
+    0
+  );
+
+  var slideParallaxScene = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook: 1,
+    duration: "200%",
+  })
+    .setTween(parallaxTl)
+    .addTo(controller);
+});
+
 jQuery(".project-left").each(function () {
   var ourScenedos = new ScrollMagic.Scene({
     triggerElement: this,
