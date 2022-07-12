@@ -1,5 +1,50 @@
 var controller = new ScrollMagic.Controller();
 
+const proyectosCajaButton = document.querySelectorAll(
+  ".main__proyectoscolumnas-caja__leermas button"
+);
+
+const proyectosCaja = document.querySelectorAll(
+  ".main__proyectoscolumnas-caja__overlay"
+);
+const modalProyectos = document.querySelectorAll(
+  ".main__proyectoscolumnas-caja__modalleermas"
+);
+
+const buttonCerrarProyecto = document.querySelectorAll(
+  ".main__proyectoscolumnas-caja__modalleermas-botoncerrar"
+);
+
+proyectosCaja.forEach((proyecto) => {
+  proyecto.addEventListener("click", () => {
+    modalProyectos.forEach((modalproyecto) => {
+      if (proyecto.dataset.proyectos === modalproyecto.dataset.proyectos) {
+        modalproyecto.classList.add("activo");
+      }
+    });
+  });
+  buttonCerrarProyecto.forEach((cerrarProyecto) => {
+    cerrarProyecto.addEventListener("click", (e) => {
+      modalProyectos.forEach((modalproyecto) => {
+        if (proyecto.dataset.proyectos === modalproyecto.dataset.proyectos) {
+          modalproyecto.classList.remove("activo");
+        }
+      });
+    });
+  });
+});
+
+proyectosCajaButton.forEach((proyecto) => {
+  proyecto.addEventListener("click", () => {
+    modalProyectos.forEach((modalproyecto) => {
+      if (proyecto.dataset.proyectos === modalproyecto.dataset.proyectos) {
+        modalproyecto.classList.add("activo");
+      }
+    });
+  });
+});
+// SCROLL PARALLAX
+
 jQuery(".project").each(function () {
   var ourScene = new ScrollMagic.Scene({
     triggerElement: this.children[0],
