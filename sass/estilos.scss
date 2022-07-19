@@ -745,6 +745,7 @@ body {
         flex-direction: column;
         cursor: pointer;
         transition: 0.5s;
+        box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.35);
         &:hover {
           background-position: left;
           .main__proyectoscolumnas-caja__overlay {
@@ -904,6 +905,60 @@ body {
             }
           }
         }
+      }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                            PROJECTOS SINGLE PAGE                           */
+    /* -------------------------------------------------------------------------- */
+
+    &__veranesprojectinfo {
+      padding: 0;
+      &-caracteristicas {
+        width: 100%;
+        max-width: 650px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__titulo {
+          h1 {
+            color: $primary;
+            font-weight: bold;
+          }
+        }
+        &__texto {
+          padding: 1.25rem 0;
+          p {
+            color: $primary;
+            strong {
+              font-weight: bold;
+            }
+          }
+          ul {
+            padding-left: 0;
+            li {
+              list-style: none;
+              padding: 1rem 0;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              color: $primary;
+              &:before {
+                content: "\f560";
+                padding-right: 0.35rem;
+                font: var(--fa-font-solid);
+              }
+              &:last-of-type {
+                padding-bottom: 0;
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      &-fondo {
+        background-size: cover;
+        height: 650px;
       }
     }
   }

@@ -240,6 +240,12 @@ body .header__menu ul li a.current {
   font-weight: bold;
 }
 
+body .main {
+  /* -------------------------------------------------------------------------- */
+  /*                            PROJECTOS SINGLE PAGE                           */
+  /* -------------------------------------------------------------------------- */
+}
+
 body .main__bannerprincipal {
   background-image: url("../img/Room-Final-4K.jpg");
   background-size: cover;
@@ -1127,6 +1133,71 @@ body .main__proyectoscolumnas-caja__modalleermas-botoncerrar i {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 1.8rem;
+}
+
+body .main__veranesprojectinfo {
+  padding: 0;
+}
+
+body .main__veranesprojectinfo-caracteristicas {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main__veranesprojectinfo-caracteristicas__titulo h1 {
+  color: #5c6e47;
+  font-weight: bold;
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto {
+  padding: 1.25rem 0;
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto p {
+  color: #5c6e47;
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto p strong {
+  font-weight: bold;
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto ul {
+  padding-left: 0;
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto ul li {
+  list-style: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #5c6e47;
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto ul li:before {
+  content: "\f560";
+  padding-right: 0.35rem;
+  font: var(--fa-font-solid);
+}
+
+body .main__veranesprojectinfo-caracteristicas__texto ul li:last-of-type {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+body .main__veranesprojectinfo-fondo {
+  background-size: cover;
+  height: 650px;
 }
 
 body .footer {
