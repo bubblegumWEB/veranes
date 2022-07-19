@@ -247,9 +247,9 @@ body .main {
 }
 
 body .main__bannerprincipal {
-  background-image: url("../img/Room-Final-4K.jpg");
+  background-image: url("../img/Social-BBQ-2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,9 +279,10 @@ body .main__bannerprincipal-contenido_info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: left;
 }
 
 body .main__bannerprincipal-contenido_info ul {
@@ -296,14 +297,70 @@ body .main__bannerprincipal-contenido_info ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  max-width: 25vw;
+  padding: 0 2.5vw;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main__bannerprincipal-contenido_info ul li h1 {
+  text-align: left;
+  font-weight: bold;
 }
 
 body .main__bannerprincipal-contenido_info ul li img {
   height: 2rem;
   padding-right: 1rem;
+}
+
+body .main__bannerprincipal-contenido_info ul li p {
+  font-weight: 300;
+  font-size: 2vh;
+}
+
+body .main__bannerprincipal-contenido_info-leermas {
+  padding-top: 2rem;
+  text-decoration: none;
+}
+
+body .main__bannerprincipal-contenido_info-leermas i {
+  font-size: 1.5rem;
+  padding-left: 0.85rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__bannerprincipal-contenido_info-leermas button {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main__bannerprincipal-contenido_info-leermas button:hover {
+  opacity: 0.85;
+}
+
+body .main__bannerprincipal-contenido_info-leermas button:hover i {
+  -webkit-transform: scale(1.35) translateX(0.2rem);
+          transform: scale(1.35) translateX(0.2rem);
 }
 
 body .main__bannerprincipal-contenido_imagen {
@@ -943,6 +1000,8 @@ body .main__proyectoscolumnas-caja {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 body .main__proyectoscolumnas-caja:hover {
