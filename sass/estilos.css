@@ -714,6 +714,7 @@ body .main__exclusivaubicacion .container {
   max-width: 65vw;
   margin: auto;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 body .main__exclusivaubicacion-contenido {
@@ -875,8 +876,12 @@ body .main__conceptoydiseno-info p {
   font-family: 100;
 }
 
+body .main__conceptoydiseno-image {
+  padding: 2rem;
+}
+
 body .main__conceptoydiseno-image img {
-  height: 300px;
+  height: 350px;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1383,6 +1388,7 @@ body .main__veranesprojectinfo-caracteristicas__texto ul li:last-of-type {
 body .main__veranesprojectinfo-fondo {
   background-size: cover;
   height: 650px;
+  background-position: center top;
 }
 
 body .main__veranesprojectlanos {
@@ -1397,12 +1403,36 @@ body .main__veranesprojectlanos img {
      object-fit: contain;
 }
 
+body .main__veranesprojectgallery {
+  padding: 4rem 0;
+}
+
 body .main__veranesprojectgallery .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
+}
+
+body .main__veranesprojectgallery .grid a {
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+body .main__veranesprojectgallery .grid a:hover .main__veranesprojectgallery-overlay-zoom {
+  opacity: 1;
+}
+
+body .main__veranesprojectgallery .grid a:hover .main__veranesprojectgallery-overlay-zoom i {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .main__veranesprojectgallery .grid a:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 body .main__veranesprojectgallery .grid img {
@@ -1412,6 +1442,42 @@ body .main__veranesprojectgallery .grid img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__veranesprojectgallery-overlay-zoom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .main__veranesprojectgallery-overlay-zoom i {
+  font-size: 4rem;
+  color: #fff;
+  opacity: 0.7;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 body .footer {
