@@ -202,6 +202,7 @@ body .header__menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 body .header__menu ul {
@@ -219,6 +220,10 @@ body .header__menu ul li {
   padding-right: 25px;
 }
 
+body .header__menu ul li:hover .header__menu-submenu {
+  display: block;
+}
+
 body .header__menu ul li:last-child {
   padding-right: 0;
 }
@@ -230,6 +235,7 @@ body .header__menu ul li a {
   text-transform: uppercase;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 5;
 }
 
 body .header__menu ul li a:hover {
@@ -238,6 +244,33 @@ body .header__menu ul li a:hover {
 
 body .header__menu ul li a.current {
   font-weight: bold;
+}
+
+body .header__menu-submenu {
+  position: absolute;
+  background-color: #5c6e47;
+  padding: 0.5rem;
+  z-index: 4;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+body .header__menu-submenu ul {
+  display: block;
+  padding-left: 0;
+}
+
+body .header__menu-submenu ul li {
+  padding: 0.5rem;
+}
+
+body .header__menu-submenu ul li a {
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0;
 }
 
 body .main {
@@ -898,6 +931,20 @@ body .main__headerpage-overlay {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+body .main__nosotros {
+  padding: 5rem 0;
+}
+
+body .main__nosotros-aboutus p {
+  font-size: 1.25rem;
+}
+
+body .main__nosotros-aboutus p strong {
+  font-size: 1.15rem;
+  font-weight: bolder;
+  color: #5c6e47;
+}
+
 body .main__contactinfo {
   padding: 6rem 0;
 }
@@ -969,22 +1016,22 @@ body .main__proyectoscolumnas {
   padding: 5rem 0;
 }
 
-body .main__proyectoscolumnas .col-md-4:nth-child(1) .main__proyectoscolumnas-caja {
+body .main__proyectoscolumnas .col-lg-4:nth-child(1) .main__proyectoscolumnas-caja {
   background-image: url("../img/Render-de-Fachada-Final.jpg");
 }
 
-body .main__proyectoscolumnas .col-md-4:nth-child(2) .main__proyectoscolumnas-caja {
+body .main__proyectoscolumnas .col-lg-4:nth-child(2) .main__proyectoscolumnas-caja {
   background-image: url("../img/Salon-TV.jpg");
 }
 
-body .main__proyectoscolumnas .col-md-4:nth-child(3) .main__proyectoscolumnas-caja {
+body .main__proyectoscolumnas .col-lg-4:nth-child(3) .main__proyectoscolumnas-caja {
   background-image: url("../img/Social-BBQ-2.jpg");
 }
 
 body .main__proyectoscolumnas-caja {
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 550px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -1123,13 +1170,13 @@ body .main__proyectoscolumnas-caja__modalleermas {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 4rem;
+  padding: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1146,14 +1193,92 @@ body .main__proyectoscolumnas-caja__modalleermas.activo {
           transform: translateX(0);
 }
 
+body .main__proyectoscolumnas-caja__modalleermas-check {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: auto;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  left: 0;
+  margin: 0 auto;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check ul li {
+  font-size: 0.55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding-right: 0.7rem;
+  color: #fff;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check ul li p {
+  padding-top: 0.25rem;
+  letter-spacing: 0.07rem;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check__box {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff90;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check__box.disponible {
+  background: transparent;
+  border: 0;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check__box.disponible i {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check__box.no-disponible {
+  background: transparent;
+  border: 0;
+}
+
+body .main__proyectoscolumnas-caja__modalleermas-check__box.no-disponible i {
+  color: red;
+  background: #fff;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
 body .main__proyectoscolumnas-caja__modalleermas-logo img {
-  height: 120px;
-  max-width: 250px;
+  height: auto;
+  max-width: 200px;
 }
 
 body .main__proyectoscolumnas-caja__modalleermas-texto p {
   color: #fff;
   font-weight: 300;
+  padding: 1.25rem 0;
 }
 
 body .main__proyectoscolumnas-caja__modalleermas-boton a {
@@ -1226,6 +1351,7 @@ body .main__veranesprojectinfo-caracteristicas__texto {
 
 body .main__veranesprojectinfo-caracteristicas__texto p {
   color: #5c6e47;
+  font-size: 1.35rem;
 }
 
 body .main__veranesprojectinfo-caracteristicas__texto p strong {
@@ -1259,8 +1385,37 @@ body .main__veranesprojectinfo-fondo {
   height: 650px;
 }
 
+body .main__veranesprojectlanos {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+body .main__veranesprojectlanos img {
+  width: 100%;
+  height: 750px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .main__veranesprojectgallery .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+body .main__veranesprojectgallery .grid img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 body .footer {
-  height: 500px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1284,7 +1439,7 @@ body .footer__logo {
 
 body .footer__logo img {
   width: auto;
-  height: 170px;
+  height: 120px;
   -o-object-fit: contain;
      object-fit: contain;
 }

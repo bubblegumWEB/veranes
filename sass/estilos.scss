@@ -150,6 +150,7 @@ body {
     &__menu {
       display: flex;
       align-items: center;
+      position: relative;
       ul {
         margin-bottom: 0;
         display: flex;
@@ -157,6 +158,11 @@ body {
         li {
           list-style: none;
           padding-right: 25px;
+          &:hover {
+            .header__menu-submenu {
+              display: block;
+            }
+          }
           &:last-child {
             padding-right: 0;
           }
@@ -166,11 +172,33 @@ body {
             text-decoration: none;
             text-transform: uppercase;
             transition: 0.5s;
+            z-index: 5;
             &:hover {
               opacity: 0.5;
             }
             &.current {
               font-weight: bold;
+            }
+          }
+        }
+      }
+      &-submenu {
+        position: absolute;
+        background-color: $primary;
+        padding: 0.5rem;
+        z-index: 4;
+        transform: translateY(30px);
+        box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.25);
+        display: none;
+        ul {
+          display: block;
+          padding-left: 0;
+          li {
+            padding: 0.5rem;
+            a {
+              color: #fff;
+              font-size: 0.85rem;
+              padding: 0;
             }
           }
         }
@@ -696,6 +724,22 @@ body {
       }
     }
 
+    // NOSOTROS
+
+    &__nosotros {
+      padding: 5rem 0;
+      &-aboutus {
+        p {
+          font-size: 1.25rem;
+          strong {
+            font-size: 1.15rem;
+            font-weight: bolder;
+            color: $primary;
+          }
+        }
+      }
+    }
+
     // CONTACT PAGE
 
     &__contactinfo {
@@ -754,7 +798,7 @@ body {
 
     &__proyectoscolumnas {
       padding: 5rem 0;
-      .col-md-4 {
+      .col-lg-4 {
         // PROYECTO IMAGEN 1
         &:nth-child(1) {
           .main__proyectoscolumnas-caja {
@@ -777,7 +821,7 @@ body {
       &-caja {
         background-size: cover;
         background-position: center;
-        height: 500px;
+        height: 550px;
         position: relative;
         overflow: hidden;
         display: flex;
@@ -891,9 +935,9 @@ body {
           top: 0;
           width: 100%;
           height: 100%;
-          padding: 4rem;
+          padding: 2rem 4rem;
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           flex-direction: column;
           background-color: $primary-dark;
           transition: 0.5s;
@@ -901,16 +945,70 @@ body {
           &.activo {
             transform: translateX(0);
           }
+          &-check {
+            transition: 0.5s;
+            width: auto;
+            transform: translateY(30px);
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+            left: 0;
+            margin: 0 auto;
+            ul {
+              display: flex;
+              padding-left: 0;
+              justify-content: center;
+              li {
+                font-size: 0.55rem;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding-right: 0.7rem;
+                color: #fff;
+                p {
+                  padding-top: 0.25rem;
+                  letter-spacing: 0.07rem;
+                }
+              }
+            }
+            &__box {
+              width: 12px;
+              height: 12px;
+              border: 1px solid #ffffff90;
+              display: flex;
+              justify-content: flex-end;
+              &.disponible {
+                background: transparent;
+                border: 0;
+                i {
+                  color: #fff;
+                  font-weight: bolder;
+                  font-size: 0.8rem;
+                }
+              }
+              &.no-disponible {
+                background: transparent;
+                border: 0;
+                i {
+                  color: red;
+                  background: #fff;
+                  font-weight: bolder;
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
           &-logo {
             img {
-              height: 120px;
-              max-width: 250px;
+              height: auto;
+              max-width: 200px;
             }
           }
           &-texto {
             p {
               color: #fff;
               font-weight: 300;
+              padding: 1.25rem 0;
             }
           }
           &-boton {
@@ -972,6 +1070,7 @@ body {
           padding: 1.25rem 0;
           p {
             color: $primary;
+            font-size: 1.35rem;
             strong {
               font-weight: bold;
             }
@@ -1001,6 +1100,30 @@ body {
         height: 650px;
       }
     }
+
+    &__veranesprojectlanos {
+      padding: 4rem 0;
+      text-align: center;
+      img {
+        width: 100%;
+        height: 750px;
+        object-fit: contain;
+      }
+    }
+
+    &__veranesprojectgallery {
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        img {
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
   }
 
   /* -------------------------------------------------------------------------- */
@@ -1008,7 +1131,7 @@ body {
   /* -------------------------------------------------------------------------- */
 
   .footer {
-    height: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1021,7 +1144,7 @@ body {
       z-index: 3;
       img {
         width: auto;
-        height: 170px;
+        height: 120px;
         object-fit: contain;
       }
     }

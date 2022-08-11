@@ -32,7 +32,15 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a class="current" href="proyectos.html">Proyectos</a></li>
+                    <li><a class="current" href="proyectos.html">Proyectos</a>
+                        <div class="header__menu-submenu">
+                            <ul>
+                                <li><a href="proyectos-veranesresidences.html">Veranes Residences</a></li>
+                                <li><a href="proyectos-veranespark.html">Veranes Park</a></li>
+                                <li><a href="proyectos-veranessm82.html">SM82</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
@@ -56,42 +64,8 @@
         <div class="main__proyectoscolumnas">
             <div class="container">
                 <div class="row">
-                    <!-- CAJAS COLUMNAS 1-->
-                    <div class="col-md-4 project-zoom">
-                        <div class="main__proyectoscolumnas-caja" data-proyectos="veranesresidences">
-                            <div class="main__proyectoscolumnas-caja__logo">
-                                <img src="img/LogoVeranesResidences_white.png" alt="">
-                            </div>
-                            <div class="main__proyectoscolumnas-caja__leermas">
-                                <button data-proyectos="veranesresidences">Leer más</button>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                            <div data-proyectos="veranesresidences" class="main__proyectoscolumnas-caja__modalleermas">
-                                <div class="main__proyectoscolumnas-caja__modalleermas-logo">
-                                    <img src="img/LogoVeranesResidences_white.png" alt="">
-                                </div>
-                                <div class="main__proyectoscolumnas-caja__modalleermas-texto">
-                                    <p>Exclusiva torre residencial de
-                                        apartamentos que será edificada en
-                                        un inmueble ubicado en la esquina
-                                        de las calles Ramón Corripio y
-                                        Prolongación Siervas de Maria,
-                                        Ensanche Naco, Distrito Nacional.</p>
-                                </div>
-                                <div class="main__proyectoscolumnas-caja__modalleermas-boton">
-                                    <a href="proyectos-veranesresidences.html"><button>Entrar</button></a>
-                                </div>
-                                <button data-proyectos="veranesresidences"
-                                    class="main__proyectoscolumnas-caja__modalleermas-botoncerrar">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                            <div data-proyectos="veranesresidences" class="main__proyectoscolumnas-caja__overlay"></div>
-                        </div>
-                    </div>
-                    <!-- FIN COLUMNA -->
                     <!-- CAJAS COLUMNAS 2-->
-                    <div class="col-md-4 project-zoom_dos">
+                    <div class="col-lg-4 col-md-12 col-sm-12 project-zoom_dos">
                         <div class="main__proyectoscolumnas-caja" data-proyectos="veranespark">
                             <div class="main__proyectoscolumnas-caja__logo">
                                 <img src="img/LogoVeranes_Park-white.png" alt="">
@@ -111,21 +85,110 @@
                                         de las calles Ramón Corripio y
                                         Prolongación Siervas de Maria,
                                         Ensanche Naco, Distrito Nacional.</p>
-                                </div>
-                                <div class="main__proyectoscolumnas-caja__modalleermas-boton">
-                                    <a href="proyectos-veranespark.html"><button>Entrar</button></a>
+                                    <div class="main__proyectoscolumnas-caja__modalleermas-boton">
+                                        <a href="proyectos-veranespark.html"><button>Entrar</button></a>
+                                    </div>
                                 </div>
                                 <button data-proyectos="veranesresidences"
                                     class="main__proyectoscolumnas-caja__modalleermas-botoncerrar">
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
+                                <div class="main__proyectoscolumnas-caja__modalleermas-check">
+                                    <ul>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <p>En desarrolo</p>
+                                        </li>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                            </div>
+                                            <p>En construcción</p>
+                                        </li>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box"></div>
+                                            <p>Finalizado</p>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="main__proyectoscolumnas-caja__modalleermas-check__box disponible">
+                                                <i class="fa-solid fa-square-check"></i>
+                                            </div>
+                                            <p>Disponibles</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div data-proyectos="veranespark" class="main__proyectoscolumnas-caja__overlay"></div>
                         </div>
                     </div>
                     <!-- FIN COLUMNA -->
+                    <!-- CAJAS COLUMNAS 1-->
+                    <div class="col-lg-4 col-md-12 col-sm-12 project-zoom">
+                        <div class="main__proyectoscolumnas-caja" data-proyectos="veranesresidences">
+                            <div class="main__proyectoscolumnas-caja__logo">
+                                <img src="img/LogoVeranesResidences_white.png" alt="">
+                            </div>
+                            <div class="main__proyectoscolumnas-caja__leermas">
+                                <button data-proyectos="veranesresidences">Leer más</button>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div data-proyectos="veranesresidences" class="main__proyectoscolumnas-caja__modalleermas">
+                                <div class="main__proyectoscolumnas-caja__modalleermas-logo">
+                                    <img src="img/LogoVeranesResidences_white.png" alt="">
+                                </div>
+                                <div class="main__proyectoscolumnas-caja__modalleermas-texto">
+                                    <p>Exclusiva torre residencial de
+                                        apartamentos que será edificada en
+                                        un inmueble ubicado en la esquina
+                                        de las calles Ramón Corripio y
+                                        Prolongación Siervas de Maria,
+                                        Ensanche Naco, Distrito Nacional.</p>
+                                    <div class="main__proyectoscolumnas-caja__modalleermas-boton">
+                                        <a href="proyectos-veranesresidences.html"><button>Entrar</button></a>
+                                    </div>
+                                </div>
+                                <button data-proyectos="veranesresidences"
+                                    class="main__proyectoscolumnas-caja__modalleermas-botoncerrar">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <div class="main__proyectoscolumnas-caja__modalleermas-check">
+                                    <ul>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+
+                                            <p>En desarrolo</p>
+                                        </li>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <p>En construcción</p>
+                                        </li>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                            </div>
+                                            <p>Finalizado</p>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="main__proyectoscolumnas-caja__modalleermas-check__box disponible">
+                                                <i class="fa-solid fa-square-check"></i>
+                                            </div>
+                                            <p>Disponibles</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-proyectos="veranesresidences" class="main__proyectoscolumnas-caja__overlay"></div>
+                        </div>
+                    </div>
+                    <!-- FIN COLUMNA -->
                     <!-- CAJAS COLUMNAS 3-->
-                    <div class="col-md-4 project-zoom_dos">
+                    <div class="col-lg-4 col-md-12 col-sm-12 project-zoom_dos">
                         <div class="main__proyectoscolumnas-caja" data-proyectos="veranessm82">
                             <div class="main__proyectoscolumnas-caja__logo">
                                 <img src="img/Logo-SM82_WHITE.png" alt="">
@@ -145,14 +208,43 @@
                                         de las calles Ramón Corripio y
                                         Prolongación Siervas de Maria,
                                         Ensanche Naco, Distrito Nacional.</p>
-                                </div>
-                                <div class="main__proyectoscolumnas-caja__modalleermas-boton">
-                                    <a href="proyectos-veranessm82.html"><button>Entrar</button></a>
+                                    <div class="main__proyectoscolumnas-caja__modalleermas-boton">
+                                        <a href="proyectos-veranessm82.html"><button>Entrar</button></a>
+                                    </div>
                                 </div>
                                 <button data-proyectos="veranesresidences"
                                     class="main__proyectoscolumnas-caja__modalleermas-botoncerrar">
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
+                                <div class="main__proyectoscolumnas-caja__modalleermas-check">
+                                    <ul>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <p>En desarrolo</p>
+                                        </li>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <p>En construcción</p>
+                                        </li>
+                                        <li>
+                                            <div class="main__proyectoscolumnas-caja__modalleermas-check__box">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <p>Finalizado</p>
+                                        </li>
+                                        <li>
+                                            <div
+                                                class="main__proyectoscolumnas-caja__modalleermas-check__box no-disponible">
+                                                <i class="fa-solid fa-square-xmark"></i>
+                                            </div>
+                                            <p>Disponibles</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div data-proyectos="veranessm82" class="main__proyectoscolumnas-caja__overlay"></div>
                         </div>
@@ -170,7 +262,7 @@
 
     <footer class="footer">
         <div class="footer__logo project-zoom">
-            <img src="img/LogoVeranes_vf_white.png" alt="">
+            <img src="img/logotipo-white.png" alt="">
         </div>
         <div class="footer__overlay"></div>
     </footer>
