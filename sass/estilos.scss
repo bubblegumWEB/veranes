@@ -147,6 +147,16 @@ body {
         object-fit: contain;
       }
     }
+    .responsiveboton {
+      border: 0;
+      background: transparent;
+      padding-right: 1rem;
+      display: none;
+      i {
+        color:$primary;
+        font-size: 2.5rem;
+      }
+    }
     &__menu {
       display: flex;
       align-items: center;
@@ -1211,6 +1221,8 @@ body {
   }
 }
 
+// PANTALLAS GRANDES
+
 @media screen and (max-width: 2400px) and (min-width: 1850px) {
   body {
     .main {
@@ -1222,3 +1234,111 @@ body {
     }
   }
 }
+
+// TABLETS Y CELULARES
+
+@media screen and (max-width:1024px) and (min-width: 310px) {
+    body {
+      .header {
+         &__menu {
+          display: block;
+          position: absolute;
+           top: 107px;
+           z-index: 999;
+           width: 100%;
+           height: auto;
+           background-color: #fff;
+           padding: 1.5rem 0;
+           left: -100%;
+           transition: .5s;
+           &.activo {
+            left: 0;
+           }
+           ul {
+            display: block;
+            padding-left: 0;
+            padding: 0 1.5rem;
+            li {
+              padding: 0.85rem 0;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+              &:last-child {
+                border-bottom: 0;
+              }
+              a {
+                padding: 0;
+              }
+            }
+           }
+         }
+         .responsiveboton {
+           display: block;
+         }
+      }
+        .main {
+          // BANNER PRINCIPAL
+           &__bannerprincipal {
+            height: 750px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center top;
+                flex-direction: column;
+                &-contenido {
+                    width: 100%;
+                   &_info {
+                      ul {
+                        padding: 4rem;
+                        li {
+                            width: 100%;
+                            max-width: 100vw;
+                        }
+                      }
+                  }
+                  &_arrowdown {
+                     display: none;
+                  } 
+              }
+           }
+
+          // PORTAFOLIO
+          &__portafoliohome {
+              &-info {
+                 width: 100%;
+              }
+              &-image {
+                 &__arrowdown {
+                    display: none;
+                 }
+              }
+          } 
+
+          // CONCEPTO Y DISEñO HOME
+
+          &__conceptoydiseno {
+             padding: 5rem 0;
+             height: auto;
+              img {
+                height: 350px;
+                width: 100%;
+                object-fit: contain;
+                }
+            }
+
+            // PROYECTOS COLUMNAS HOME
+        
+            &__proyectoscolumnas {
+              &-caja {
+                 margin-bottom: 1.25rem;
+              }
+            }
+           
+            // VERANES PARK GALLERY
+
+            .grid {
+              grid-template-columns: repeat(1, 1fr);
+            }
+
+        }
+    }
+}
+
+

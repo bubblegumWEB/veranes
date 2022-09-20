@@ -15,6 +15,13 @@ const buttonCerrarProyecto = document.querySelectorAll(
   ".main__proyectoscolumnas-caja__modalleermas-botoncerrar"
 );
 
+const buttoresponsive = document.getElementById("menuResponsive");
+const headermovil = document.querySelector("body .header__menu");
+
+buttoresponsive.addEventListener("click", () => {
+    headermovil.classList.toggle("activo");
+})
+
 proyectosCaja.forEach((proyecto) => {
   proyecto.addEventListener("click", () => {
     modalProyectos.forEach((modalproyecto) => {
